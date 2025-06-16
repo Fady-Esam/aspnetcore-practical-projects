@@ -1,0 +1,29 @@
+﻿@using Trips.Models.ViewModels
+@model TripVM
+
+<form asp-action="Add" asp-controller="Trip" method="post">
+    <input asp-for="Trip.Id" type="hidden" />
+    <div class="form-group">
+        <label asp-for="Trip.Destination" class="form-label"></label>
+        <input asp-for="Trip.Destination" class="form-control" />
+        <span asp-validation-for="Trip.Destination" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Trip.Comidation" class="form-label"></label>
+        <input asp-for="Trip.Comidation" class="form-control" />
+        <span asp-validation-for="Trip.Comidation" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Trip.StartDate" class="form-label"></label>
+        <input asp-for="Trip.StartDate" class="form-control" type="date" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Trip.EndDate" class="form-label"></label>
+        <input asp-for="Trip.EndDate" class="form-control" type="date" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Trip.Description" class="form-label"></label>
+        <textarea asp-for="Trip.Description" class="form-control"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>

@@ -1,0 +1,6 @@
+@IMPSession_HostAddress = http://localhost:5177
+
+GET {{IMPSession_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

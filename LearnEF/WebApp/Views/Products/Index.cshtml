@@ -1,0 +1,47 @@
+﻿@model IEnumerable<ProductModel>
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<h1>Product List</h1>
+
+<partial name="_Notification" />
+
+<!-- Add Button -->
+<div style="margin-bottom: 15px;">
+    <a href="/Products/AddNewItem/0" style="text-decoration: none; background-color: #4CAF50; color: white; padding: 10px 15px; border-radius: 5px;">Add New Product</a>
+</div>
+
+<table style="width: 100%; border-collapse: collapse; text-align: left;">
+    <thead>
+        <tr style="background-color: #f2f2f2;">
+            <th style="padding: 8px; border: 1px solid #ddd;">Name</th>
+            <th style="padding: 8px; border: 1px solid #ddd;">Price</th>
+            <th style="padding: 8px; border: 1px solid #ddd;">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td style="padding: 8px; border: 1px solid #ddd;">@product.Name</td>
+                <td style="padding: 8px; border: 1px solid #ddd;">@product.Price</td>
+                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">
+                    <!-- Update Button -->
+                    <a href="/Products/AddNewItem/@product.ID" style="text-decoration: none; background-color: #2196F3; color: white; padding: 5px 10px; border-radius: 5px; margin-right: 5px;">Update</a>
+
+                    <!-- Delete Button -->
+                    <form action="/Products/DeleteItem/@product.ID" method="post" style="display: inline;">
+                        <button type="submit" style="background-color: #f44336; color: white; padding: 5px 10px; border: none; border-radius: 5px; cursor: pointer;">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+
+

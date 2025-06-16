@@ -1,0 +1,50 @@
+# Ignore Visual Studio temporary files, build results, and VS user-specific files
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+x64/
+x86/
+Debug/
+Release/
+
+# VS cache files
+.vs/
+ipch/
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+*.cache
+*.pdb
+
+# CMake and build system
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Others
+*.log
+*.tlog
+*.idb
+*.ilk
+
+# Rider / JetBrains IDEs
+.idea/
+
+# Backup files
+*.bak
+*.orig
+*.tmp
+
+# Mac & Linux
+.DS_Store
+Thumbs.db

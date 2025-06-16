@@ -1,0 +1,6 @@
+@IMPAsp_HostAddress = http://localhost:5073
+
+GET {{IMPAsp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

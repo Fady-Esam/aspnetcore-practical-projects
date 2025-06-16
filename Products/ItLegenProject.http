@@ -1,0 +1,6 @@
+@ItLegenProject_HostAddress = http://localhost:5272
+
+GET {{ItLegenProject_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

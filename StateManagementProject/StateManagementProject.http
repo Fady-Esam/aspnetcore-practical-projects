@@ -1,0 +1,6 @@
+@StateManagementProject_HostAddress = http://localhost:5242
+
+GET {{StateManagementProject_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
