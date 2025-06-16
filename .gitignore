@@ -1,9 +1,6 @@
 # Ignore Visual Studio temporary files, build results, and VS user-specific files
-# Ignore all CSS files
-
-
-# Ignore all HTML files
 *.html
+*.css
 # User-specific files
 *.rsuser
 *.suo
