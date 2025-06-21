@@ -1,6 +1,6 @@
 # 🌐 ASP.NET Core Learning Projects & Applications
 
-A well-structured collection of ASP.NET Core projects and applications built during my journey of learning web backend development. <br> 
+A well-structured collection of ASP.NET Core projects and applications built during my journey of learning web backend development.  
 This repository showcases hands-on implementations, API development, data handling, authentication, and other backend concepts through modular and functional projects.
 
 ---
